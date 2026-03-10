@@ -1,12 +1,12 @@
 #include<linux/module.h>
 
-static int __init module_init(void)
+static int __init helloworld_init(void)
 {
     pr_info("The module has been initialised");
     return 0;
 }
 
-static void __exit module_exit(void)
+static void __exit helloworld_cleanup(void)
 {
     pr_info("the module has been cleaned");
 }
